@@ -1,28 +1,32 @@
-### Installation
+### Save change
 
-- Download [git](https://git-scm.com/downloads) ( windows/mac/Linux ).
-- Install the git with default setup ( After installtion check git bash in your device ).
-
-```
-git --version #In CMD / Terminal ( Bash )
-```
-
-### Configure git remote data
-
-- Add your remote [configuaration](https://linuxize.com/post/how-to-configure-git-username-and-email/) global / local scope
+- Stage your changes ( Selet the files / changes which are to be saved )
 
 ```
-#Global scope
-git config -global user.name <username> #git config -global user.name "afeef"
-git config -global user.email <email>
+#To stage all changes
+git add .
 
-#Local scope
-git config user.name <username>
-git config user.email <email>
+#To stage a perticular chage
+git add <filepath> #git add src/app.js
+
+#To unstage changes
+git reset <filepath> #use . to unstage all changes
 ```
 
-- Confirm config details
+- Check working tree ( To check files staged / unstaged / commited ).
 
 ```
-git config --list #show all config datas
+git status #Green(staged)/Red (Unstaged)/Other (commited)
+```
+
+- Commit your changes ( To save staged changes )
+
+```
+git commit -m <commit message> #git commit -m "Feat: Create web push notification"
+```
+
+- Check the commit log ( To check the commit history ).
+
+```
+git log
 ```
