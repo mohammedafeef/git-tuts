@@ -30,3 +30,17 @@ git commit -m <commit message> #git commit -m "Feat: Create web push notificatio
 ```
 git log
 ```
+
+### Commit message convention
+
+- Add keyword at the first like feat, fix, wip (work in progress), chore, etc.
+
+```
+git commit -m "Feat: <statement>"
+```
+
+- Write commit message in future tense
+
+```
+git commit -m "Wip: create navbar "
+```
