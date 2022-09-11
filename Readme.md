@@ -1,22 +1,18 @@
-### Work in different feature
+### Collaborate in project ( Add to internet )
 
-- Create new [branch](https://www.atlassian.com/git/tutorials/using-branches) ( To create a independent copy of the project )
+GitHub is an online software development platform used for storing, tracking, and collaborating on software projects. It enables developers to upload their own code files and to collaborate with fellow developers on open-source projects.
 
-```
-#create new branch
-git branch <newbranchname> #git branch feat/status/push-notification
+- Create account in git hosting platform ([Github](https://github.com/)/[Gitlab](https://gitlab.com/)/[Bitbucket](https://bitbucket.org/))
 
-#delete a branch
-git branch -D <branchname>
+- Crete a [Repository](https://github.com/new) to manage your project ( Like creating project folder in internet ).
 
-```
-
-- [Checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) to a branch ( For changing to perticular branch ).
+- Link remote repository with local directory or clone your repository ( Create a copy of remote repo )
 
 ```
-#create and checkout to new branch
-git checkout -b <newbranchname>
+#link remote repo with local
+git remote add <remote identifier> <remote repo link> #git remote add origin https://github.com/mohammedafeef/git-tuts.git
 
-#For changing a perticular branch
-git checkout <branchname>
+#to clone a remote repo
+git clone <remote repo link>
+
 ```
