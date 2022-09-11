@@ -20,3 +20,19 @@ git checkout -b <newbranchname>
 #For changing a perticular branch
 git checkout <branchname>
 ```
+
+### Branch naming convention
+
+- Add main action type as base keyword (feat, fix, wip)
+
+```
+git branch feat/home/nav
+```
+
+- Add reset of the details as keyword (separate them with '-' or '/')
+
+```
+git branch feat/status/push-notification
+```
+
+- You can also use workboard card name as branch name
