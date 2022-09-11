@@ -1,18 +1,19 @@
-### Collaborate in project ( Add to internet )
+### Add local changes to remote repository
 
-GitHub is an online software development platform used for storing, tracking, and collaborating on software projects. It enables developers to upload their own code files and to collaborate with fellow developers on open-source projects.
-
-- Create account in git hosting platform ([Github](https://github.com/)/[Gitlab](https://gitlab.com/)/[Bitbucket](https://bitbucket.org/))
-
-- Crete a [Repository](https://github.com/new) to manage your project ( Like creating project folder in internet ).
-
-- Link remote repository with local directory or clone your repository ( Create a copy of remote repo )
-
+- Push local changes to remote ( Add local commited changes to remote repo )
 ```
-#link remote repo with local
-git remote add <remote identifier> <remote repo link> #git remote add origin https://github.com/mohammedafeef/git-tuts.git
+#confirm remote updated to push if not pull first then go for push
+git push <remote ref> <branchname> #git push origin feat/status/push-notification
 
-#to clone a remote repo
-git clone <remote repo link>
+#Push to head branch (master/main)
+git push origin
+```
+- Pull remote changes ( To pull remote changes to local directory )
+```
+#confirm all of the changes where commited to pull from remote
+git pull <remote ref> <branchname> #git pull origin feat/status/push-notification
+
+#To pull head branch (master/main)
+git pull origin
 
 ```
