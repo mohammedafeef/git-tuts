@@ -1,32 +1,22 @@
-### Save change
+### Work in different feature
 
-- Stage your changes ( Selet the files / changes which are to be saved )
-
-```
-#To stage all changes
-git add .
-
-#To stage a perticular chage
-git add <filepath> #git add src/app.js
-
-#To unstage changes
-git reset <filepath> #use . to unstage all changes
-```
-
-- Check working tree ( To check files staged / unstaged / commited ).
+- Create new [branch](https://www.atlassian.com/git/tutorials/using-branches) ( To create a independent copy of the project )
 
 ```
-git status #Green(staged)/Red (Unstaged)/Other (commited)
-```
+#create new branch
+git branch <newbranchname> #git branch feat/status/push-notification
 
-- Commit your changes ( To save staged changes )
-
-```
-git commit -m <commit message> #git commit -m "Feat: Create web push notification"
-```
-
-- Check the commit log ( To check the commit history ).
+#delete a branch
+git branch -D <branchname>
 
 ```
-git log
+
+- [Checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) to a branch ( For changing to perticular branch ).
+
+```
+#create and checkout to new branch
+git checkout -b <newbranchname>
+
+#For changing a perticular branch
+git checkout <branchname>
 ```
