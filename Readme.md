@@ -13,8 +13,8 @@ git --version #In CMD / Terminal ( Bash )
 
 ```
 #Global scope
-git config -global user.name <username> #git config -global user.name "afeef"
-git config -global user.email <email>
+git config --global user.name <username> #git config --global user.name "afeef"
+git config --global user.email <email>
 
 #Local scope
 git config user.name <username>
